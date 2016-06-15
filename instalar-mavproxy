@@ -28,9 +28,9 @@ cp inicio-mavproxy.service /lib/systemd/system
 
 cd
 
-sudo nano chmod 775 incio-mavproxy
+sudo chmod 775 incio-mavproxy
 
-sudo nano chmod 775 instalacion-wifibroadcast
+sudo chmod 775 instalacion-wifibroadcast
 
 sudo systemctl daemon-reload
 
