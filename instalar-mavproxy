@@ -12,3 +12,28 @@ rpi-serial-console disable
 
 cd
 
+sudo wget https://github.com/5jjCopter/wifibroadcast-mavproxy/archive/master.zip
+
+sudo unzip wifibroadcast-mavproxy-master.zip
+
+cd wifibroadcast-mavproxy
+
+cp inicio-mavproxy /home/pi
+
+cp instalacion-wifibroadcast /home/pi
+
+cp inicio-mavproxy.service /lib/systemd/system
+
+cd
+
+sudo nano chmod 775 incio-mavproxy
+
+sudo nano chmod 775 instalacion-wifibroadcast
+
+sudo systemctl daemon-reload
+
+sudo systemctl enable inicio-mavproxy
+
+sudo ./instalacion-wifibroadcast
+
+
