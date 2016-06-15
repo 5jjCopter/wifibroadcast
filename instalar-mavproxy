@@ -18,11 +18,7 @@ sudo unzip master.zip
 
 sudo rm master.zip
 
-cd wifibroadcast-mavproxy-master
-
 cp inicio-mavproxy /home/pi
-
-cp instalacion-wifibroadcast /home/pi
 
 cp inicio-mavproxy.service /lib/systemd/system
 
@@ -30,12 +26,9 @@ cd
 
 sudo chmod 775 incio-mavproxy
 
-sudo chmod 775 instalacion-wifibroadcast
-
 sudo systemctl daemon-reload
 
 sudo systemctl enable inicio-mavproxy
 
-sudo ./instalacion-wifibroadcast
 
 
