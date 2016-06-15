@@ -14,9 +14,11 @@ cd
 
 sudo wget https://github.com/5jjCopter/wifibroadcast-mavproxy/archive/master.zip
 
-sudo unzip wifibroadcast-mavproxy-master.zip
+sudo unzip master.zip
 
-cd wifibroadcast-mavproxy
+sudo rm master.zip
+
+cd wifibroadcast-mavproxy-master
 
 cp inicio-mavproxy /home/pi
 
