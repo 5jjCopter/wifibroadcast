@@ -18,13 +18,15 @@ sudo unzip master.zip
 
 sudo rm master.zip
 
-cp inicio-mavproxy /home/pi
+cd wifibroadcast-mavproxy-master
 
-cp inicio-mavproxy.service /lib/systemd/system
+sudo cp inicio-mavproxy /home/pi
+
+sudo cp mavproxy.service /lib/systemd/system
 
 cd
 
-sudo chmod 775 incio-mavproxy
+sudo chmod 775 inicio-mavproxy
 
 sudo systemctl daemon-reload
 
