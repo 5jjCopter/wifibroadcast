@@ -3,7 +3,7 @@ Description=mavproxy
 After=network.target user.slice
 
 [Service]
-ExecStart=/home/pi/incio-maxproxy
+ExecStart=/home/pi/incio-mavproxy
 ExecReload=/bin/kill -HUP $MAINPID
 Restart=always
 
