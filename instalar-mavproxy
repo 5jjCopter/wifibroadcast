@@ -24,13 +24,26 @@ sudo cp inicio-mavproxy /home/pi
 
 sudo cp mavproxy.service /lib/systemd/system
 
+cd /etc/network
+
+sudo rm interfaces
+
+cd /home/pi/wifibroadcast-mavproxy-master
+
+sudo cp interfaces /etc/network 
+
+cd /etc
+
+sudo rm rc.local
+
+cd /home/pi/wifibroadcast-mavproxy-master
+
+sudo cp rc.local /etc
+
 cd
 
 sudo chmod 775 inicio-mavproxy
 
-sudo systemctl daemon-reload
-
-sudo systemctl enable inicio-mavproxy
 
 
 
