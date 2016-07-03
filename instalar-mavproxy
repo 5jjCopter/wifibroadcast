@@ -20,9 +20,9 @@ sudo rm master.zip
 
 cd wifibroadcast-mavproxy-master
 
-sudo cp inicio-mavproxy /home/pi
-
 sudo cp mavproxy.service /lib/systemd/system
+
+sudo cp inicio-mavproxy /home/pi
 
 cd /etc/network
 
