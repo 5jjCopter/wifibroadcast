@@ -44,6 +44,36 @@ cd
 
 sudo chmod 775 inicio-mavproxy
 
+sudo wget https://github.com/5jjCopter/navio/archive/master.zip
+
+sudo unzip master.zip
+
+cd navio-master
+
+sudo cp video /home/pi
+
+sudo cp video.service /lib/systemd/system
+
+sudo chmod 775 video
+
+sudo systemctl daemon-reload
+
+sudo systemctl enable video
+
+cd /etc/network
+
+sudo rm interfaces
+
+cd
+
+sudo cp interfaces /etc/network
+
+cd /etc/network
+
+sudo chmod 775 interfaces
+
+sudo reboot
+
 
 
 
