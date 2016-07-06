@@ -1,0 +1,35 @@
+sudo wget https://github.com/5jjCopter/navio/archive/master.zip
+
+sudo unzip master.zip
+
+cd navio-master
+
+sudo cp ardupilot.service /lib/systemd/system
+
+sudo cp video /home/pi
+
+sudo chmod 775 video
+
+cd /etc/network
+
+sudo rm interfaces
+
+cd
+
+cd navio-master
+
+sudo cp interfaces /etc/network
+
+cd /etc/network
+
+sudo chmod 775 interfaces
+
+cd
+
+#si quieres que video arraque automatico quitar (  #  ) en las 2 siguientes lineas
+
+#sudo systemctl daemom-reload
+
+#sudo systemctl enable video
+
+sudo reboot
