@@ -1,0 +1,25 @@
+sudo wget https://github.com/5jjCopter/wifibroadcast-mavproxy/archive/master.zip
+
+sudo unzip master.zip
+
+cd wifibroadcast-mavproxy-master
+
+sudo chmod 775 rc.local
+
+cd /etc/rc.local
+
+sudo rm rc.local
+
+cd
+
+cd wifibroadcast-mavproxy-master
+
+sudo cp rc.local /etc
+
+cd
+
+sudo rm -rf wifibroadcast-mavproxy-master
+
+sudo rm master.zip
+
+sudo reboot
