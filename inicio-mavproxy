@@ -1,2 +1,0 @@
-# Esto inicia mavproxy de manera que el enlace serie al ordenador compañero (en / dev / ttyUSB0) está disponible a un ordenador compañero y GCS externa a través de UDP
-mavproxy.py --master /dev/ttyUSB0 --baud 921600 --out udpin:localhost:9000 --out udpbcast:192.168.42.255:14550
