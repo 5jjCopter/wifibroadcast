@@ -6,7 +6,7 @@ cd wifibroadcast-mavproxy-master
 
 sudo chmod 775 rc.local
 
-cd /etc/rc.local
+cd /etc/
 
 sudo rm rc.local
 
